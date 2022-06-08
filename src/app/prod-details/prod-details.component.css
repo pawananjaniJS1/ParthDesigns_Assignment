@@ -1,0 +1,138 @@
+.arrow{
+    color: #6D6D6D;
+    font-weight: lighter;
+    font-size: small;
+}
+
+.lowertxt{
+    color: #6D6D6D;
+    font-size: large;
+}
+
+.price{
+    display: flex;
+    
+}
+.cross{
+    margin-top: 5px;
+    margin-left: 10px;
+    color: #6D6D6D;
+    text-decoration: line-through;
+}
+
+.green{
+    margin-top: 5px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: #418019;
+}
+
+hr{
+    color: #6D6D6D;
+}
+
+.chstxt{
+    color: #6D6D6D;
+}
+
+.c-grp1{
+    display: flex;
+    justify-content: space-between;
+    width:7vw;
+}
+
+.circle{
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    background-color:burlywood;
+    
+}
+
+.c-grp2{
+
+        display: flex;
+        justify-content: space-between;
+        width:10vw;
+    
+}
+
+.ldiv{
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+
+.qty{
+    display: flex;
+}
+
+.txt{
+    margin-right: 2vh;
+}
+
+.btn-grp{
+    display: flex;
+
+}
+
+.btn1, .btn2, .quantity{
+    background-color: white;
+    border: 1px solid #DADADA;
+    padding-top:0px;
+    padding-bottom: 0px;
+    width:30px;
+    text-align: center;
+    
+}
+
+.btn-1,.btn-2{
+    margin-left: 2vh;
+    margin-top: 2vh;
+    width:204px;
+    height:56px;
+    border: 1px solid #B1794E;
+}
+
+.btn-1{
+    background-color: #B1794E;
+    color: white;
+}
+
+.btn-2{
+    background-color: white;
+    color: #B1794E;
+}
+
+
+.title{
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+  }
+
+
+  .about{
+      padding-top: 2vh;
+      padding-bottom: 2vh;
+  }
+
+
+  li{
+      padding-bottom: 1vh;
+  }
+
+
+  .txtSl{
+        font-size: large;
+        color: #6D6D6D;
+  }
+
+  .slLink{
+      text-decoration: none;
+      color:#B1794E
+  }
+
+  .dis{
+      font-size: large;
+      color: #6D6D6D;
+  }

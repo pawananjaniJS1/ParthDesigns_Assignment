@@ -1,0 +1,81 @@
+
+
+
+<div id="customers">
+
+  <div class="title">
+
+    <div class="titleTxt"><h3>{{table1.name}}</h3></div>
+
+    <div>
+      <img class="titleImg"  (click)="toggleShow(1)" src="./assets/images/dropIcon.svg"  width="40" height="40">
+    </div>
+  </div>
+ 
+
+
+    <table id="table1" class="tb" *ngIf="showTable1">
+
+      <tr *ngFor="let item of table1.rows">
+        <td class="name">{{item.name}}</td>
+        <td class="value">{{item.value}}</td>
+      </tr>
+     
+    </table>
+  
+
+
+  
+</div>
+
+<div id="customers">
+
+  <div class="title">
+
+    <div class="titleTxt"><h3>{{table2.name}}</h3></div>
+
+    <div>
+      <img class="titleImg"  (click)="toggleShow(2)" src="./assets/images/dropIcon.svg"  width="40" height="40">
+    </div>
+  </div>
+
+  <table id="table2" class="tb" *ngIf="showTable2">
+
+    <tr *ngFor="let item of table2.rows">
+      <td class="name">{{item.name}}</td>
+      <td class="value">{{item.value}}</td>
+    </tr>
+   
+  </table>
+  
+</div>
+
+<div id="customers">
+
+  <div class="title">
+
+    <div class="titleTxt"><h3>{{table3.name}}</h3></div>
+
+    <div>
+      <img class="titleImg"  (click)="toggleShow(3)" src="./assets/images/dropIcon.svg"  width="40" height="40">
+    </div>
+  </div>
+
+
+    <table id="table3" class="tb" *ngIf="showTable3">
+
+      <tr *ngFor="let item of table3.rows">
+        <td class="name">{{item.name}}</td>
+        <td class="value">{{item.value}}</td>
+      </tr>
+     
+    </table>
+  
+ 
+  
+</div>
+
+
+
+
+

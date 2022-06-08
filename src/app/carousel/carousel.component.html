@@ -1,0 +1,15 @@
+<div class="car">
+    <img class="img-car" src={{images[id].src}} alt={{images[id].alt}}/>
+
+  <br/>
+  <div class="thmb">
+    <img class="tsvg" src="./assets/images/arrow.svg"  (click)="decImg()">
+    <img  [ngClass]="{'active':id==0}" class="tImg" src= {{images[0].src}} (click)="updateSrc(images[0].id)">
+    <img [ngClass]="{'active':id==1}" class="tImg" src={{images[1].src}}  (click)="updateSrc(images[1].id)">
+    <img [ngClass]="{'active':id==2}"  class="tImg" src={{images[2].src}}  (click)="updateSrc(images[2].id)">
+    <img [ngClass]="{'active':id==3}" class="tImg" src={{images[3].src}}  (click)="updateSrc(images[3].id)">
+    <img [ngClass]="{'active':id==4}" class="tImg" src={{images[4].src}}  (click)="updateSrc(images[4].id)">
+    <img src="./assets/images/arrow.svg"  (click)="incImg()">
+  </div>
+
+</div>

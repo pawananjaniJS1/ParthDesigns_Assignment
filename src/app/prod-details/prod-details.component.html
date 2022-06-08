@@ -1,0 +1,179 @@
+<div>
+    <p class="arrow">Home > Furniture > Chair > Rocking Chair</p>
+    <h2>Modern Ergonomic Rocking Chair with Cushion Foam 1 Seater</h2>
+    <p class="lowertxt">PD Originals</p>
+
+    <div class="price">
+    <h3>₹ 20,399</h3>
+    <p class="cross">₹ 26,489</p>
+    <p class="green">(Save 40%)</p>
+    </div>
+
+    <hr>
+
+    <div>
+        <p class="chstxt">Choose Wood Finish : <b style="color:black ;">Teak</b></p>
+        <div class="c-grp1">
+           <div class="circle"></div> 
+           <div class="circle" style="background-color: black;"></div> 
+        </div>
+    </div>
+
+
+    <div class="ldiv">
+        <p class="chstxt">Choose Texture / Colour: <b style="color:black ;">Burnt Orange</b></p>
+        <div class="c-grp2">
+           <div class="circle"></div> 
+           <div class="circle" style="background-color: black;"></div> 
+           <div class="circle"></div> 
+        </div>
+    </div>
+
+    <div class="qty" >
+     <div class="txt">Quantity</div>
+
+     <div class="btn-grp">
+        <div class="btn1">
+            <button style="background-color:white;border:0px" (click)="dec()">-</button>
+        </div>
+        <div class="quantity">
+                {{quantity}}
+        </div>
+        <div class="btn2">
+            <button style="background-color:white;border: 0px;"  (click)="inc()">+</button>
+        </div>
+     </div>
+    </div>
+
+    <div class="big-btns">
+        <button class="btn-1">Pre-Order Now</button>
+        <button class="btn-2">+Add to Cart</button>
+    </div>
+<hr>
+
+<div class="about">
+  <div class="title">
+   <div class="titleText"><h3>About this item</h3></div>  
+   <div>
+    <img class="titleImg"  (click)="toggleShow(1)" src="./assets/images/dropIcon.svg"  width="40" height="40">
+   </div>
+
+</div>
+
+<ul *ngIf="showList">
+    <li>Ergonomic designed curve suits human being structure perfectly, providing maximum comfort.</li>
+
+      <li>Load capacity: 200kg, please see the size photo on the left table in detail</li>
+       <li>Ideal for dining room, balcony, garden or other outdoor occasions.</li> 
+       <li>Well padded seat of ergonomic shape with backrest and armrest provides a exceptionally comfortable, relaxing, and enjoyable place to sit.</li>
+       <li>It has a gentle rocking effect which helps nursing your baby, relaxing or just enjoying some time together.</li>
+</ul>
+</div>
+
+</div>
+
+<hr>
+
+<app-table></app-table>
+
+<hr>
+
+<div class="about">
+    <div class="title">
+     <div class="titleText"><h3>Refund / Replacement / Cancellations</h3></div>  
+     <div>
+      <img class="titleImg"  (click)="toggleShow(2)" src="./assets/images/dropIcon.svg"  width="40" height="40">
+     </div>
+  
+  </div>
+  
+  <div *ngIf="showTxt1">
+  <p class="txtSl">
+   <b style="color:grey">Refunds :</b> We carefully inspect each item prior to shipment, and also require your inspection and signature upon delivery. Should you discover a defect in your product, however, please contact us immediately. Product that is refused because it does not fit through an entryway will be customer’s responsibility as we encourage to study the sizes mentioned on the product page carefully and see if the product you order fits into your entryway and rooms. 
+  </p>
+   
+  </div>
+
+  <div *ngIf="showTxt1">
+    <p class="txtSl">
+     <b style="color:grey">We offer replacement or refund for any defective items only.</b><br/>
+     Refunds will be initiated within 7 to 10 business days on your original payment method. 
+    </p>
+     
+    </div>
+
+    <div *ngIf="showTxt1">
+        <p class="txtSl">
+         <b style="color:grey">Replacements :</b> All products are eligible for free replacement, in an unlikely event of damaged, defective or different item delivered to you. Please contact or write to us at : care@parthdesigns.com within 3 days of delivery.
+        </p>
+         
+        </div>
+
+        <div *ngIf="showTxt1">
+            <p class="txtSl">
+             <b style="color:grey">Cancellation Policy -</b> You can cancel confirmed order only within 24 hours of placing the order. Post 24 hours  no cancellations are allowed. 
+              <br/><br/>
+             You can always contact us for any queries at care@parthdesigns.com
+             You can always contact us for any queries on : 
+             Weekdays  10AM - 7PM
+             Number : +91 9606067547
+            </p>
+             
+            </div>
+    
+
+
+  </div>
+
+  <hr>
+
+  <div class="about">
+    <div class="title">
+     <div class="titleText"><h3>Warranty & Installations</h3></div>  
+     <div>
+      <img class="titleImg"  (click)="toggleShow(3)" src="./assets/images/dropIcon.svg"  width="40" height="40">
+     </div>
+  
+  </div>
+
+  <div *ngIf="showTxt2">
+    <p class="txtSl">
+        ParthDesigns Store or Seller does not offer installation of this product.
+        The product comes with a 12 month warranty against any manufacturing defects and any other issues with the materials that have been used.
+        <br><br>
+        The warranty does not cover damages due to usage of the product beyond its intended use and wear & tear in the natural course of product usage.
+
+        <br><br>
+        Please read our refund policy <a  href="#" class="slLink">Here</a>.
+    </p>
+     
+    </div>
+
+
+  </div>
+
+  <hr>
+  <div class="about">
+    <div class="title">
+     <div class="titleText"><h3>Disclaimer</h3></div>  
+     <div>
+      <img class="titleImg"  (click)="toggleShow(4)" src="./assets/images/dropIcon.svg"  width="40" height="40">
+     </div>
+  
+  </div>
+  
+  <ul *ngIf="showTxt3">
+
+      <li class="dis">The color of the product may vary slightly compared to the picture displayed on your screen. This is due to lighting, pixel quality and color settings</li>
+  
+        <li class="dis">Please check the product's dimensions to ensure the product will fit in the desired location. Also, check if the product will fit through the entrance(s) and door(s) of the premises</li>
+         <li class="dis">Please expect an unevenness of up to 5 mm in the product due to differences in surfaces and floor levels</li> 
+         <li class="dis">Flipkart, or the Seller delivering the product, will not take up any type of civil work, such as drilling holes in the wall to mount the product. The product will only be assembled in case carpentry assembly is required
+        </li>
+         <li class="dis">In case the product appears to lack shine, wiping the surface with a cloth will help clear the surface of dust particles</li>
+  </ul>
+  </div>
+  
+  
+
+  

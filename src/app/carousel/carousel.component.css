@@ -1,0 +1,20 @@
+.img-car{
+    width: 300px;
+    height:300px;
+}
+.thmb{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h2{
+    display: inline-block;
+}
+
+.tsvg{
+    transform: rotate(180deg);
+}
+
+.active{
+    border: 2px solid #000;
+}

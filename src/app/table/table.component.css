@@ -1,0 +1,49 @@
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    padding-bottom: 2vh;
+  }
+  
+   #customers th {
+
+    padding: 8px;
+  }
+  
+
+  tr td:nth-child(2) {
+    padding-right: 40px;
+}​
+
+
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+
+    color: black;
+  }
+
+td{
+    border-bottom: 1px solid #DADADA; 
+    padding-bottom: 1vh;
+}
+
+.name{
+    padding-right: 75px;
+}
+
+.value{
+    
+    padding-left: 75px;
+}
+
+.title{
+  display: flex;
+  width:100%;
+  justify-content: space-between;
+}
+
+
+
+
