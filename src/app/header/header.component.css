@@ -2,9 +2,11 @@
 .header{
   display: flex;
   justify-content: space-between;
- margin:20px; 
+  margin:20px;
  background-color: #ffffff;
  opacity: 0.9;
+ position: relative;
+ top:0px;
 
 }
 .logo{

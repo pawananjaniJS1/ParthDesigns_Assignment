@@ -19,7 +19,7 @@ local_storage:Product[]= []
 addToCart(item:Product){
 let done = false;
 
-  if(localStorage.getItem('cartItems')==null){
+  if(localStorage.getItem('cartItems')==null || localStorage.getItem('cartItems')=='[]'){
      this.local_storage = [];
      console.log('local storage is empty');
      this.cartItems.push(item);
