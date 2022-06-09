@@ -51,18 +51,27 @@ let done = false;
 
     
       
-      // for(let i in this.local_storage)
-      // {
-      //   //console.log("debug",this.cartItems);
-      //   let myItem = this.local_storage.
-      //   if(this.local_storage[i].id==item.id)
-      //   this.cartItems.push(this.local_storage[i]);
-      // }
+      for(let i in this.local_storage)
+      {
+        //console.log("debug",this.cartItems);
+       let mybool = false;
+        if(this.local_storage[i].id==item.id)
+        {
+          for(let i in this.cartItems)
+          {
+            if(this.cartItems[i].id==item.id) {
+              this.cartItems[i].qty = this.local_storage[i].qty;
+              mybool = true;
+              break;}
+          }
 
-      let myItem = this.local_storage.find(x=>x.id==item.id);
-      
-      if(myItem==undefined) this.cartItems.push(item);
-      else myItem.qty = item.qty;
+          if(mybool==false) this.cartItems.push(this.local_storage[i]);
+        }
+
+      }
+
+
+
     
   
     localStorage.setItem('cartItems',JSON.stringify(this.cartItems));
@@ -73,6 +82,10 @@ let done = false;
 
 
 getCartItems(){
+ this.local_storage = JSON.parse(localStorage.getItem('cartItems') || '[]');
+ console.log("Local Storage",this.local_storage);
+ this.subject.next(this.local_storage);
+ this.cartItems = this.local_storage;
   return this.subject.asObservable();
 }
 

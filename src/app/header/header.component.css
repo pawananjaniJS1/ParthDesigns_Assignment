@@ -50,6 +50,17 @@
   margin-left: 10px;
 }
 
+.itm{
+  width:15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #b1794e;
+  opacity: 90%;
+  margin-left:-6px;
+  margin-top: -9px;
+  text-align: center;
+}
+
 @media only screen and (max-width:600px)
 {
   .header{
