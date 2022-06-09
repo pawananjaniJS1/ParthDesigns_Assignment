@@ -37,7 +37,7 @@
             <button style="background-color:white;border:0px" (click)="dec()">-</button>
         </div>
         <div class="quantity">
-                {{quantity}}
+                {{product.qty}}
         </div>
         <div class="btn2">
             <button style="background-color:white;border: 0px;"  (click)="inc()">+</button>
@@ -46,8 +46,8 @@
     </div>
 
     <div class="big-btns">
-        <button class="btn-1">Pre-Order Now</button>
-        <button class="btn-2">+Add to Cart</button>
+        <button  class="btn-1">Pre-Order Now</button>
+        <button routerLink="/cart" (click)="addtoCart()" class="btn-2">+Add to Cart</button>
     </div>
 <hr>
 

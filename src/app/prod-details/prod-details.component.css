@@ -14,14 +14,14 @@
     
 }
 .cross{
-    margin-top: 5px;
+    margin-top: 20px;
     margin-left: 10px;
     color: #6D6D6D;
     text-decoration: line-through;
 }
 
 .green{
-    margin-top: 5px;
+    margin-top: 18px;
     margin-left: 10px;
     font-weight: bold;
     color: #418019;
@@ -29,6 +29,7 @@
 
 hr{
     color: #6D6D6D;
+
 }
 
 .chstxt{
@@ -38,7 +39,7 @@ hr{
 .c-grp1{
     display: flex;
     justify-content: space-between;
-    width:7vw;
+    width:fit-content;; 
 }
 
 .circle{
@@ -46,14 +47,19 @@ hr{
     width: 32px;
     height: 32px;
     background-color:burlywood;
+    margin:5px;
     
+}
+
+.circle:active{
+    padding: 50%;
 }
 
 .c-grp2{
 
         display: flex;
         justify-content: space-between;
-        width:10vw;
+        width:fit-content;
     
 }
 

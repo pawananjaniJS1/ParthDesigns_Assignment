@@ -9,7 +9,9 @@ import {MatGridListModule} from '@angular/material/grid-list'
 import {MatCardModule} from '@angular/material/card';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ProdDetailsComponent } from './prod-details/prod-details.component';
-import { TableComponent } from './table/table.component'
+import { TableComponent } from './table/table.component';
+import { CartComponent } from './cart/cart.component';
+import { HomeComponent } from './home/home.component'
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { TableComponent } from './table/table.component'
     HeaderComponent,
     CarouselComponent,
     ProdDetailsComponent,
-    TableComponent
+    TableComponent,
+    CartComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
